@@ -14,7 +14,7 @@ df_path = "/Users/username/Desktop/tinder_df.json"
 request_iter = 20
 
 
-if not os.path.exists(path):
+if not os.path.exists(df_path):
     df = pd.DataFrame(columns = ["_id", "bio", "birth_date", "name", "photos"])
 
 HEADERS = {
