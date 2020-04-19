@@ -1,4 +1,4 @@
-# Tinder-Photo-Bot-
+# Tinder Photo Bot
 Tinder Photo Bot 
 
 Download unlimited Tinder Photos from your account. 
