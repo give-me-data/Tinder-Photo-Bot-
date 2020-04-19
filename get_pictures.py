@@ -9,7 +9,7 @@ import time
 
 path = "/Users/username/Desktop/tinder_collection/"
 X_Auth_Token  = "your_tinder_x_auth_token"
-df_path "/Users/username/Desktop/tinder_df.json"
+df_path = "/Users/username/Desktop/tinder_df.json"
 request_iter = 20
 
 
@@ -67,3 +67,4 @@ for i in range(len(df)):
 
 
 
+    
