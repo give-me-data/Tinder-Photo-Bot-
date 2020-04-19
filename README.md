@@ -4,7 +4,7 @@ Tinder Photo Bot
 Download unlimited Tinder Photos from your account. 
 No Selenium, only Requests!
 
-#Settings inside get_pictures.py:
+# Settings inside get_pictures.py:
 
 path = "/Your/Photo/Folder/"
 X_Auth_Token  = 'Your Token'
@@ -14,7 +14,7 @@ request_iter = 20
 #max iter * 15 Accounts per r
 #Create Df if not exist, else append new tinderellas and drop duplicates. 
 
-#Variable Information 
+# Variable Information 
 
 ## path
 ## df_path
