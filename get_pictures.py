@@ -27,8 +27,6 @@ HEADERS = {
 
 }
 
-TEASERS_URL = 'https://api.gotinder.com/v2/fast-match/teasers?locale=de'
-
 df = pd.read_json(df_path, lines=True)
 
 for j in range(0,int(request_iter)):
