@@ -1,5 +1,8 @@
 # Tinder Photo Bot
+
 Tinder Photo Bot 
+
+-- Perfect to train your Machine Learning Models ;) --
 
 Download unlimited Tinder Photos from your account. 
 No Selenium, only Requests!
