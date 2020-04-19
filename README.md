@@ -4,6 +4,8 @@ Tinder Photo Bot
 Download unlimited Tinder Photos from your account. 
 No Selenium, only Requests!
 
+-- 19 Apr 2020 --
+
 My script follows details laid out in Sanskar Jethi's [Medium post](https://medium.com/@sansyrox/hacking-tinders-premium-model-43f9f699d44) about a Tinder API vulnerability.
 
 # Settings inside get_pictures.py:
