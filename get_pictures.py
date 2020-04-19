@@ -6,6 +6,7 @@ import requests
 from pathlib import Path
 import pandas as pd 
 import time
+from tqdm import tqdm
 
 path = "/Users/username/Desktop/tinder_collection/"
 X_Auth_Token  = "your_tinder_x_auth_token"
@@ -32,7 +33,6 @@ df = pd.read_json(df_path, lines=True)
 for j in range(0,int(request_iter)):
     url = "https://api.gotinder.com/v2/recs/core?locale=de"
     r = requests.request("GET", url, headers=HEADERS)
-    print(r.status_code)
     assert r.status_code == 200, "GET failed, check auth_token"
 
     json_resp = json.loads(r.text)
@@ -50,14 +50,10 @@ for j in range(0,int(request_iter)):
 df.drop_duplicates(subset = ["_id"])
 df.to_json(df_path, orient="records", lines=True)
 
-for i in range(len(df)):
+for i in tqdm(range(len(df))):
     for j in range(len(df["photos"][i])):
         if os.path.exists(str(path) + "{}_{}.jpg".format(df["_id"][i], j)):
-            print("pass")
             continue
-
-        print(df["photos"][i][j])
-        print(str("{}_{}.jpg".format(df["_id"][i], j)))
         urllib.request.urlretrieve(str(df["photos"][i][j]), str(path) + "{}_{}.jpg".format(df["_id"][i], j))
         
 
