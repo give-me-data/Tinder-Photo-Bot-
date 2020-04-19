@@ -35,6 +35,13 @@ Path of DataFrame and DataFrame name - export as json. Create Df if not exist, e
 
 "/Users/username/Desktop/tinder_df.json"
 
+Features: 
+
+- _id (You can build a like bot with following get request - same HEADERS: https://api.gotinder.com/like/{_id}?locale=de)
+- bio (str)
+- birth_date (str)
+- photos (list)
+
 ## X_Auth_Token (as string)
 
 To get your own X_Auth_Token:  [Medium post](https://medium.com/@sansyrox/hacking-tinders-premium-model-43f9f699d44)
