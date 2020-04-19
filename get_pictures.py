@@ -16,6 +16,8 @@ request_iter = 20
 
 if not os.path.exists(df_path):
     df = pd.DataFrame(columns = ["_id", "bio", "birth_date", "name", "photos"])
+else:
+    df = pd.read_json(df_path, lines=True)
 
 HEADERS = {
     'Accept': 'application/json',
@@ -27,8 +29,6 @@ HEADERS = {
     "user-session-id": "06dff4fa-c452-4fd2-abd2-8dbd82659da0"
 
 }
-
-df = pd.read_json(df_path, lines=True)
 
 for j in range(0,int(request_iter)):
     url = "https://api.gotinder.com/v2/recs/core?locale=de"
