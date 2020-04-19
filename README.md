@@ -43,4 +43,4 @@ Number of accounts you want to get photos from:
 
 request_iter * 15 Accounts = Accounts
 
-A test with request_iter = 20 results in more than 1 GB Photos (2k files)
+A test with request_iter = 20 (300 Accounts) results in more than 1 GB Photos (2k files)
